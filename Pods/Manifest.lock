@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.8.0)
+  - FlagKit (2.0.1)
+  - Siesta/Alamofire (1.4.2):
+    - Alamofire (> 4.1)
+    - Siesta/Core
+  - Siesta/Core (1.4.2)
+  - SwiftLint (0.29.1)
+
+DEPENDENCIES:
+  - FlagKit
+  - Siesta/Alamofire (~> 1.0)
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FlagKit
+    - Siesta
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  FlagKit: 75c64346179f254d1753bebdc5b1f9cbe7890748
+  Siesta: 337a9c39c9b78bba904286310c86562a886efdab
+  SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
+
+PODFILE CHECKSUM: 510c3af4e7e56490a71649dc282fddd1998b9634
+
+COCOAPODS: 1.5.3

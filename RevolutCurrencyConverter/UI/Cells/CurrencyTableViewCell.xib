@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CurrencyTableViewCell" customModule="RevolutCurrencyConverter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="561" height="229"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jzx-KY-Vrb" userLabel="Currency Image View">
+                    <rect key="frame" x="20" y="89.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="nlz-LK-Wc4"/>
+                        <constraint firstAttribute="height" constant="50" id="uK6-wy-akG"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dS-er-hYf">
+                    <rect key="frame" x="289" y="130" width="97" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvb-0i-gM2" userLabel="Currency Label Short">
+                    <rect key="frame" x="90" y="92" width="43.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOC-N4-gqP" userLabel="Currency Label Long">
+                    <rect key="frame" x="90" y="118" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" red="0.70588235294117641" green="0.70588235294117641" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="163,92" placeholder="0" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zGA-mK-o98" userLabel="Currency Value TextField">
+                    <rect key="frame" x="466" y="101" width="75" height="27"/>
+                    <color key="textColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                    <connections>
+                        <action selector="valueChanged:" destination="iN0-l3-epB" eventType="editingChanged" id="0L9-Uh-ITT"/>
+                    </connections>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uvw-gl-UtS" userLabel="TextField Underline">
+                    <rect key="frame" x="466" y="131" width="75" height="1"/>
+                    <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="j0m-nU-NeN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Uvw-gl-UtS" firstAttribute="top" secondItem="zGA-mK-o98" secondAttribute="bottom" constant="3" id="1vv-Ic-YMg"/>
+                <constraint firstItem="Jzx-KY-Vrb" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="2Ob-vv-MU4"/>
+                <constraint firstItem="Uvw-gl-UtS" firstAttribute="trailing" secondItem="zGA-mK-o98" secondAttribute="trailing" id="2uN-XG-LDd"/>
+                <constraint firstItem="zGA-mK-o98" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xOC-N4-gqP" secondAttribute="trailing" constant="20" id="67z-YX-bTr"/>
+                <constraint firstItem="Uvw-gl-UtS" firstAttribute="width" secondItem="zGA-mK-o98" secondAttribute="width" id="DGS-Cy-cnW"/>
+                <constraint firstItem="Jzx-KY-Vrb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="IqD-OU-iRv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zGA-mK-o98" secondAttribute="trailing" constant="20" id="O5C-ok-Kd4"/>
+                <constraint firstItem="qvb-0i-gM2" firstAttribute="leading" secondItem="xOC-N4-gqP" secondAttribute="leading" id="afs-fI-Mgj"/>
+                <constraint firstItem="xOC-N4-gqP" firstAttribute="top" secondItem="qvb-0i-gM2" secondAttribute="bottom" constant="5" id="czy-yg-vrt"/>
+                <constraint firstItem="qvb-0i-gM2" firstAttribute="leading" secondItem="Jzx-KY-Vrb" secondAttribute="trailing" constant="20" id="d6b-CY-72V"/>
+                <constraint firstItem="qvb-0i-gM2" firstAttribute="centerY" secondItem="Jzx-KY-Vrb" secondAttribute="centerY" constant="-12" id="l9y-Oq-Wfa"/>
+                <constraint firstItem="zGA-mK-o98" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="z9X-gV-cgR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="currencyImageView" destination="Jzx-KY-Vrb" id="ODD-qG-rYQ"/>
+                <outlet property="currencyLongLabel" destination="xOC-N4-gqP" id="OL2-hL-CHs"/>
+                <outlet property="currencyShortLabel" destination="qvb-0i-gM2" id="ePH-JN-VOQ"/>
+                <outlet property="currencyUnderlineView" destination="Uvw-gl-UtS" id="rPh-Mf-HGY"/>
+                <outlet property="currencyValueTextField" destination="zGA-mK-o98" id="Dzi-RA-iXK"/>
+                <outlet property="underlineHeightConstraint" destination="j0m-nU-NeN" id="oSS-5Z-8Wz"/>
+            </connections>
+            <point key="canvasLocation" x="287.19999999999999" y="-46.326836581709152"/>
+        </view>
+    </objects>
+</document>
